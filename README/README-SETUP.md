@@ -20,13 +20,3 @@ git remote add origin git@github.com:ibbrett/astro-transition-typescript.git
 git branch -M master
 git push -u origin master
 ```
-
-## Prerequisites
-Node.js - v18.14.1 or higher.
-
-## Recommended Text Editor
-VSCode
-
-## basic command
-[https://www.npmjs.com/package/create-astro](https://www.npmjs.com/package/create-astro)
-npm create astro@latest astro-transition-typescript -- --template blog

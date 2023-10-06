@@ -11,3 +11,13 @@ Astro framework TypeScript blog application to demontrate:
 | application setup         | [README-SETUP](./README/README-SETUP.md)     |
 | application modifications | [README-MODS](./README/README-MODS.md)       |
 | application links         | [README-LINKS](./README/README-LINKS.md)     |
+
+## Prerequisites
+Node.js - v18.14.1 or higher.
+
+## Recommended Text Editor
+VSCode
+
+## basic command
+[https://www.npmjs.com/package/create-astro](https://www.npmjs.com/package/create-astro)  
+npm create astro@latest astro-transition-typescript -- --template blog
