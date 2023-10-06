@@ -13,4 +13,7 @@ git push -u origin master
 Astro - Language Support for Astro
 
 ## Readme Files
-[README-INITIAL](./README/README-INITIAL.md)
+| Description               | File                                         |
+| ------------------------- |:-------------:                               |
+| Initial Readme File       | [README-INITIAL](./README/README-INITIAL.md) |
+| Apllication Modifications | [README-MODS](./README/README-MODS.md)       |
