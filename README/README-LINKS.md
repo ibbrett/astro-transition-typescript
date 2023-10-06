@@ -2,8 +2,8 @@
 
 Astro is an all-in-one web framework for building fast, content-focused websites
 
-| Description               | File                                         |
-| ------------------------- |:-------------:                               |
+| Description               | File |
+| ------------------------- | ---- |
 | Astro home page       | [https://astro.build](https://astro.build) |
 | Astro docs: TypeScript | [https://docs.astro.build/en/guides/typescript](https://docs.astro.build/en/guides/typescript) |
 | Astro docs: View Transitions | [https://docs.astro.build/en/guides/view-transitions](https://docs.astro.build/en/guides/view-transitions) |

@@ -3,6 +3,13 @@
 - Create Astro application
 - Push to new GitHub repo
 
+## create GitHub repo
+
+- create repo: do not include .gittignore, readme or license
+- [https://github.com/ibbrett/astro-transition-typescript](https://github.com/ibbrett/astro-transition-typescript)
+
+## create Astro application, push to repo
+
 ```sh
 nvm use 20.0.0
 npm create astro@latest astro-transition-typescript -- --template blog --install --typescript strict --git
@@ -13,3 +20,13 @@ git remote add origin git@github.com:ibbrett/astro-transition-typescript.git
 git branch -M master
 git push -u origin master
 ```
+
+## Prerequisites
+Node.js - v18.14.1 or higher.
+
+## Recommended Text Editor
+VSCode
+
+## basic command
+[https://www.npmjs.com/package/create-astro](https://www.npmjs.com/package/create-astro)
+npm create astro@latest astro-transition-typescript -- --template blog
