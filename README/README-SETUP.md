@@ -1,4 +1,4 @@
-# Astro Transition TypeScript Blog Application Setup
+# Astro Transition TypeScript Blog Setup
 
 - Create Astro application
 - Push to new GitHub repo
