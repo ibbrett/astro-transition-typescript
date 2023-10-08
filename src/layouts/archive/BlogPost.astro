@@ -4,12 +4,25 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+
 import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
+
 type Props = CollectionEntry<'blog'>['data'];
+
+//const compiled = await getCollection('compiled');
+//type PropsCompiled = CollectionEntry<'compiled'>['data'];
+/*
+type Props = {
+	blog: CollectionEntry<'blog'>['data'],
+	compiled: CollectionEntry<'compiled'>['data'],
+}
+*/
+
 const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
+const { src } = Astro.props;
 ---
 
 <html lang="en">
@@ -91,7 +104,22 @@ const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
 							}
 						</div>
 						<h1>{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</h1>
-						{posts.map((post) => (<a href={`/blog/${post.slug}/`}>[{post.slug}]</a><span>&nbsp;&nbsp;</span>))}
+						{
+							posts.map((post) => (
+						<a href={`/blog/${post.slug}/`}>[{post.slug}]</a><span>&nbsp;&nbsp;</span>
+						))
+					}
+
+
+{/*
+<h1>COMPILED</h1>
+{
+	compiled.map((c) => (
+<div>{JSON.stringify(c.src)}</div>
+))
+}
+ */}
+
 						<hr />
 					</div>
 					<slot />

@@ -16,3 +16,24 @@ import { ViewTransitions } from 'astro:transitions';
 $ npm tsc -v
 9.6.4
 ```
+
+## Downgrade tsc to 4.9.5
+
+```sh
+$ tsc -v
+Version 5.0.4
+
+$ tsc
+error TS5096: Option 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.
+
+tsconfig.json:8:15 - error TS5107: Option 'target=ES3' is deprecated and will stop functioning in TypeScript 5.5. Specify compilerOption '"ignoreDeprecations": "5.0"' to silence this error.
+
+8     "target": "es3",
+                ~~~~~
+
+
+Found 2 errors in the same file, starting at: tsconfig.json:8
+```
+
+
+
