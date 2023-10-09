@@ -8,7 +8,7 @@ heroImage: '/blog-placeholder-5.jpg'
 Additions include:
 - regular expressions
 - better string handling
-- new control statements, 
+- new control statements
 - try/catch exception handling
 - tighter definition of errors
 - formatting for numeric output
