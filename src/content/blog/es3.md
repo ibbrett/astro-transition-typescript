@@ -2,7 +2,6 @@
 title: 'ES3 ECMAScript 1999'
 description: '3th Edition – ECMAScript 1999'
 pubDate: 'Dec 01 1999'
-heroImage: '/blog-placeholder-5.jpg'
 ---
 
 Additions include:

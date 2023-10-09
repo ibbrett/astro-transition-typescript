@@ -2,7 +2,6 @@
 title: 'ES5 ECMAScript 2009'
 description: '5th Edition – ECMAScript 2009'
 pubDate: 'Dec 03 2009'
-heroImage: '/blog-placeholder-2.jpg'
 ---
 
 Additions include:

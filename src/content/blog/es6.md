@@ -2,7 +2,6 @@
 title: 'ES6 ECMAScript 2015'
 description: '6th Edition – ECMAScript 2015, aka ES6 Harmony'
 pubDate: 'Jun 17 2015'
-heroImage: '/blog-placeholder-3.jpg'
 ---
 
 Additions include:

@@ -6,6 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
+const baseUrl = await import.meta.env.BASE_URL;
+
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
@@ -126,7 +128,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li>
-									<a href={`/blog/${post.slug}/`}>
+									<a href={`${baseUrl}/blog/${post.slug}/`}>
 									<div class="hero-container"><div class="hero">
 										<div class="hero-header">{post.data.title.split(' ')[0]}</div>
 										<div class="hero-title">{post.data.title.split(' ')[1]}&nbsp;{post.data.title.split(' ')[2]}</div>

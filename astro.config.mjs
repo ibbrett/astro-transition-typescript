@@ -9,5 +9,3 @@ export default defineConfig({
 	base: '/astro-transition-typescript',
 	integrations: [mdx(), sitemap()]
 });
-
-/* viewTransitions: true */
