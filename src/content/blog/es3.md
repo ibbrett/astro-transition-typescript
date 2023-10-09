@@ -13,7 +13,6 @@ Additions include:
 - tighter definition of errors
 - formatting for numeric output
 
-<pre style="background-color:#ddd">
-foo
-bar
-</pre>
+```bash
+// terminal notes
+```

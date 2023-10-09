@@ -6,9 +6,10 @@ heroImage: '/blog-placeholder-5.jpg'
 ---
 
 Additions include:
-- Foo
+- Object.values, Object.entries, Object.getOwnPropertyDescriptors 
+- async / await constructions which use generators and promises
+- additional features for concurrency and atomics
 
-<pre style="background-color:#ddd">
-foo
-bar
-</pre>
+```bash
+// terminal notes
+```

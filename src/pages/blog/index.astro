@@ -16,9 +16,6 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			main {
-				width: 960px;
-			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -52,26 +49,51 @@ const posts = (await getCollection('blog')).sort(
 			ul li a {
 				display: block;
 			}
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+				background-color: #A5ACAF;
+			}
 			.hero-container {
 				width: 100%;
 				text-align: center;
 			}
 			.hero {
-				background-color: goldenrod;
-				padding: 8px;
-				font-size: 5em;
-				padding: 8px;
+				background-color: #69BE28;
+				padding: 8px 96px;
 				border-radius: 8px;
+				display: inline-block;
+				color: #002244;
+				border: 2px solid white;
+			}
+			.hero-header {
+				font-size: 64px;
+				line-height: 64px;
+			}
+			.hero-title {
+				font-size: 24px;
+			}
+			.hero-date {
+				font-size: 18px;
 			}
 			.title {
-				margin: 0;
-				color: rgb(var(--black));
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
 				line-height: 1;
 			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
+			.title h1 {
+				margin: 0 0 0.5em 0;
 			}
+			.date {
+				margin-bottom: 0.5em;
+				color: white;
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+
 			ul li a:hover h4,
 			ul li a:hover .date {
 				color: rgb(var(--accent));
@@ -79,7 +101,7 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
-			@media (max-width: 720px) {
+			@media (max-width: 800px) {
 				ul {
 					gap: 0.5em;
 				}
@@ -104,13 +126,13 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<div class="hero-container"><span class="hero">{post.data.title.split(' ')[0]}</span></div>				
-									<h4 class="title">{post.data.title.split(' ')[1]}&nbsp;{post.data.title.split(' ')[2]}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
+									<a href={`/blog/${post.slug}/`}>
+									<div class="hero-container"><div class="hero">
+										<div class="hero-header">{post.data.title.split(' ')[0]}</div>
+										<div class="hero-title">{post.data.title.split(' ')[1]}&nbsp;{post.data.title.split(' ')[2]}</div>
+										<div class="date"><FormattedDate date={post.data.pubDate} /></div>
+									</div></div>
+									</a>
 							</li>
 						))
 					}

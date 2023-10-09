@@ -17,7 +17,7 @@ $ npm tsc -v
 9.6.4
 ```
 
-## Downgrade tsc to 4.9.5
+## Downgrade tsc to 4.9.5 - unable to do so far
 
 ```sh
 $ tsc -v
@@ -35,5 +35,11 @@ tsconfig.json:8:15 - error TS5107: Option 'target=ES3' is deprecated and will st
 Found 2 errors in the same file, starting at: tsconfig.json:8
 ```
 
+## TS removed options
 
+```sh
+"emitDeclarationOnly": true,
+"declaration": true
+"allowImportingTsExtensions": false
+```
 

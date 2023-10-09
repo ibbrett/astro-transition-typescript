@@ -5,10 +5,14 @@ pubDate: 'Jun 01 2016'
 heroImage: '/blog-placeholder-4.jpg'
 ---
 
-Additions include:
-- Foo
+- block-scoping of variables and functions
+- destructuring patterns (of variables)
+- proper tail calls 
+- exponentiation operator ** for numbers
+- await
+- async keywords for asynchronous programming (as a preparation for ES2017)
+- Array.prototype.includes
 
-<pre style="background-color:#ddd">
-foo
-bar
-</pre>
+```bash
+The exponentiation operator is equivalent to Math.pow, but provides a simpler syntax similar to languages like Python, F#, Perl, and Ruby. async / await was hailed as an easier way to use promises and develop asynchronous code.
+```

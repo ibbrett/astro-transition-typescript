@@ -12,7 +12,6 @@ Additions include:
 - Array.isArray()
 - A comma after the final pair of values in an object (var example = { "property1":"value1", "property2":"value2", }) also no longer causes a syntax error.
 
-<pre style="background-color:#ddd">
-foo
-bar
-</pre>
+```bash
+// terminal notes
+```

@@ -9,7 +9,7 @@ const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 type Props = CollectionEntry<'blog'>['data'];
-const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <html lang="en">
@@ -20,26 +20,29 @@ const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
 				width: calc(100% - 2em);
 				max-width: 100%;
 				margin: 0;
+				background-color: #A5ACAF;
 			}
 			.hero-container {
 				width: 100%;
 				text-align: center;
 			}
 			.hero {
-				background-color: goldenrod;
-				font-size: 5em;
-				padding: 8px;
+				background-color: #69BE28;
+				padding: 8px 96px;
 				border-radius: 8px;
 				display: inline-block;
+				color: #002244;
+				border: 2px solid white;
 			}
-			.hero-image {
-				width: 100%;
+			.hero-header {
+				font-size: 64px;
+				line-height: 64px;
 			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+			.hero-title {
+				font-size: 24px;
+			}
+			.hero-date {
+				font-size: 18px;
 			}
 			.prose {
 				width: 720px;
@@ -59,12 +62,11 @@ const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				color: white;
 			}
 			.last-updated-on {
 				font-style: italic;
 			}
-
 			a {
 				text-decoration: none;
 			}
@@ -76,10 +78,9 @@ const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-container">
-					{title && <div class="hero">{title.split(' ')[0]}</div>}
-				</div>
-				<div class="prose">
-					<div class="title">
+					{title && <div class="hero">
+						<div class="hero-header">{title.split(' ')[0]}</div>
+						<div class="hero-title">{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</div>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
@@ -90,7 +91,11 @@ const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
 								)
 							}
 						</div>
-						<h1>{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</h1>
+						</div>}
+				</div>
+				<div class="prose">
+					<div class="title">
+						{/*<h1>{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</h1>*/}
 						{posts.map((post) => (<a href={`/blog/${post.slug}/`}>[{post.slug}]</a><span>&nbsp;&nbsp;</span>))}
 						<hr />
 					</div>
