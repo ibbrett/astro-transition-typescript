@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://ibbrett.github.io',
+	base: '/astro-transition-typescript',
 	integrations: [mdx(), sitemap()]
 });
 
