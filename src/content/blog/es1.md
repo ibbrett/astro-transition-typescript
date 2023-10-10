@@ -6,7 +6,7 @@ pubDate: 'Dec 01 1997'
 
 First edition 
 
-- variables, using the var keyword
+- variables, using the <i>var</i> keyword
 - data types
   - two primitive data types: numbers and strings
   - two complex data types: objects and arrays

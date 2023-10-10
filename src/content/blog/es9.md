@@ -7,7 +7,7 @@ pubDate: 'Jun 01 2018'
 Additions:
 - the spread operator and rest parameters (...) for object literals, 
 - asynchronous iteration
-- Promise.finally()
+- Promise.prototype.finally()
 - additions to RegExp
 
 ```bash

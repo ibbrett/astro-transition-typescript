@@ -5,7 +5,9 @@ pubDate: 'Jun 01 2017'
 ---
 
 Additions:
-- Object methods: values(), entries(), getOwnPropertyDescriptors()
+- Object methods: values(), entries() 
+- Object.getOwnPropertyDescriptors()
+  - static method returns all own property descriptors of a given object.
 - async / await constructions which use generators and promises
 - additional features for concurrency and atomics
 - string padding
@@ -13,6 +15,28 @@ Additions:
 - trailing commas for function parameters
 
 
-```bash
-// terminal notes
+```js
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.values(object1));
+// Expected output: Array ["somestring", 42, false]
+```
+
+```js
+const object1 = {
+  a: 'somestring',
+  b: 42,
+};
+
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+
+// Expected output:
+// "a: somestring"
+// "b: 42"
 ```
