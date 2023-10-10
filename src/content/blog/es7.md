@@ -4,6 +4,7 @@ description: '7th Edition – ECMAScript 2016'
 pubDate: 'Jun 01 2016'
 ---
 
+Additions:
 - block-scoping of variables and functions
 - destructuring patterns (of variables)
 - proper tail calls 

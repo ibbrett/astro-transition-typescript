@@ -4,7 +4,7 @@ description: '9th Edition – ECMAScript 2018'
 pubDate: 'Jun 01 2018'
 ---
 
-Additions include:
+Additions:
 - the spread operator and rest parameters (...) for object literals, 
 - asynchronous iteration
 - Promise.prototype.finally

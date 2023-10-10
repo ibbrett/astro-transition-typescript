@@ -1,16 +1,13 @@
 ---
-title: 'ES3 ECMAScript 1999'
-description: '3th Edition – ECMAScript 1999'
-pubDate: 'Dec 01 1999'
+title: "Resume Brett Morriss"
+description: "Senior Full Stack Engineer"
 ---
 
 Additions:
 - regular expressions
-- try/catch exception handling
-- switch
-- do-while
 - better string handling
 - new control statements
+- try/catch exception handling
 - tighter definition of errors
 - formatting for numeric output
 

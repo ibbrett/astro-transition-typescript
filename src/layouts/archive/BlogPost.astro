@@ -21,7 +21,7 @@ type Props = {
 }
 */
 
-const { title, description, pubDate, updatedDate, heroImage, es } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 const { src } = Astro.props;
 ---
 
@@ -65,7 +65,6 @@ const { src } = Astro.props;
 				margin-bottom: 1em;
 				padding: 1em 0;
 				text-align: center;
-				line-height: 1;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
@@ -106,7 +105,7 @@ const { src } = Astro.props;
 						<h1>{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</h1>
 						{
 							posts.map((post) => (
-						<a href={`/blog/${post.slug}/`}>[{post.slug}]</a><span>&nbsp;&nbsp;</span>
+							<nobr><a href={`/blog/${post.slug}/`}>[ {post.slug} ]</a></nobr><span>&nbsp;&nbsp;</span>
 						))
 					}
 

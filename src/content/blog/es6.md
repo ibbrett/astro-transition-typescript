@@ -4,7 +4,7 @@ description: '6th Edition – ECMAScript 2015, aka ES6 Harmony'
 pubDate: 'Jun 17 2015'
 ---
 
-Additions include:
+Additions:
 - let, const
 - arrow functions
 - Promises

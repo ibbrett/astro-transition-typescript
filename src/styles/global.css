@@ -80,14 +80,19 @@ b {
 a {
 	color: #002244;
 }
+a.footer {
+	color: rgb(var(--gray));
+	text-decoration:none;
+	margin-left:5px;
+}
+a.footer:hover {
+	color: black;
+}
 a:hover {
 	color: var(--accent);
 }
 p {
-	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
+ margin-bottom: 1em;
 }
 textarea {
 	width: 100%;
@@ -134,6 +139,7 @@ hr {
 	main {
 		padding: 1em;
 	}
+	h2 {font-size: 1.7em;}
 }
 
 .sr-only {

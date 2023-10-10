@@ -4,7 +4,7 @@ description: '5th Edition – ECMAScript 2009'
 pubDate: 'Dec 03 2009'
 ---
 
-Additions include:
+Additions:
 - JSON
 - String.trim()
 - String.charAt() to return a single character from a given position in a string.
