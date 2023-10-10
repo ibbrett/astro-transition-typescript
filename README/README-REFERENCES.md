@@ -10,3 +10,4 @@
 | logismiko.medium.com   | [ECMAScript 1](https://logismiko.medium.com/javascript-versions-ecmascript-1-1997-391b631c0e3c)          |
 | exploringjs.com        | [Control flow statements](https://exploringjs.com/impatient-js/ch_control-flow.html)                     |
 | x-team.com             | [ES5 Array Iteration Methods](https://x-team.com/blog/javascript-es5-array-iteration-methods-explained/) |
+| developer.mozilla.org  | [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)                |
