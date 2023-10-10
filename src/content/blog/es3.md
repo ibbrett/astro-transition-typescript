@@ -13,7 +13,3 @@ Additions:
 - better string handling
 - tighter definition of errors
 - formatting for numeric output
-
-```bash
-// terminal notes
-```
