@@ -10,6 +10,8 @@ Additions:
 - Promises
 - Classes
 - Spread Operator (...)
+- default parameter values
+- Array methods: find(), findIndex()
 - for ... in loop
 - import/export
 - template literals using backticks (`), and for multi-line strings without escape characters

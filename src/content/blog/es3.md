@@ -7,10 +7,10 @@ pubDate: 'Dec 01 1999'
 Additions:
 - regular expressions
 - try/catch exception handling
-- switch
-- do-while
-- better string handling
 - new control statements
+  - switch statement
+  - do-while loop
+- better string handling
 - tighter definition of errors
 - formatting for numeric output
 

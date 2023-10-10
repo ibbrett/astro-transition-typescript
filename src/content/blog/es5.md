@@ -5,10 +5,12 @@ pubDate: 'Dec 03 2009'
 ---
 
 Additions:
-- JSON
+- "strict mode"
+- JSON support
 - String.trim()
 - String.charAt() to return a single character from a given position in a string.
 - Array.isArray()
+- Array iteration methods: forEach(), map(), reduce(), filter(), every(), some()
 - A comma after the final pair of values in an object (var example = { "property1":"value1", "property2":"value2", }) also no longer causes a syntax error.
 
 ```bash
