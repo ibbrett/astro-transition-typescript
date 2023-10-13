@@ -12,12 +12,12 @@ const posts = (await getCollection(page)).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 type Props = CollectionEntry<{page: string}>['data'];
-const { title, description, pubDate } = Astro.props;
+const { title, description, pubDate, header_title } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} header_title={header_title} />
 	</head>
 	<body class={`${page} layout`}>
 		<Header />

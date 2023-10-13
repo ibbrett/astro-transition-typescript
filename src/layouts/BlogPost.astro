@@ -17,7 +17,7 @@ const { title, description, pubDate } = Astro.props;
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} header_title={SITE_HEADER_TITLE} />
 	</head>
 	<body class={`${page} layout`}>
 		<Header />
