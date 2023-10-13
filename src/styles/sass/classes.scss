@@ -1,0 +1,51 @@
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+	clip: rect(1px 1px 1px 1px);
+	/* maybe deprecated but we need to support legacy browsers */
+	clip: rect(1px, 1px, 1px, 1px);
+	/* modern browsers, clip-path works inwards from each corner */
+	clip-path: inset(50%);
+	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+	white-space: nowrap;
+}
+.date {
+	margin-bottom: 0.5em;
+	color: white;
+}
+.title {
+	margin-bottom: 1em;
+	padding: 1em 0;
+	text-align: center;
+}
+.title h1 {
+	margin: 0 0 0.5em 0;
+}
+
+.layout main {
+	width: calc(100% - 2em);
+	max-width: 100%;
+	margin: 0;
+}
+
+.about main {
+	background-color: $about-bg;
+}
+
+.code main {
+	background-color: $code-bg;
+}
+
+.blog main {
+	background-color: $blog-bg; 
+}
+
+.code .astro-code {
+	font-size: 14px;
+}

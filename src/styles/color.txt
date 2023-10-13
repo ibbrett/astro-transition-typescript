@@ -1,0 +1,16 @@
+
+Navy Blue
+#002A5C
+
+Action Green
+#7AC142
+
+# Wolf gray
+#B2B7BB
+
+# Light Blue 
+#2D5980
+
+College Navy: #002244.
+Action Green: #69BE28.
+Wolf Grey: #A5ACAF.

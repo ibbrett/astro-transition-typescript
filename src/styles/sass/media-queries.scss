@@ -1,0 +1,15 @@
+@media (min-width: 720px) {
+	body {
+		font-size: 20px;
+	}
+	main {
+		padding: 3em 1em;
+	}
+	h2 {font-size: 2.441em;}
+}
+
+@media (min-width: 1200px) {
+	.prose {
+		width: 1150px;
+	}
+}

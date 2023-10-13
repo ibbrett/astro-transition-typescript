@@ -4,9 +4,10 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import { getCollection } from 'astro:content';
+// import { getCollection } from 'astro:content';
 const now = new Date();
 const baseUrl = await import.meta.env.BASE_URL;
+const page = 'about';
 // const posts = (await getCollection('about'));
 type Props = CollectionEntry<'about'>['data'];
 const { title, description } = Astro.props;
@@ -15,65 +16,9 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-				background-color: #A5ACAF;
-			}
-			.hero-container {
-				width: 100%;
-				text-align: center;
-			}
-			.hero {
-				background-color: #69BE28;
-				padding: 8px 96px;
-				border-radius: 8px;
-				display: inline-block;
-				color: #002244;
-				border: 2px solid white;
-			}
-			.hero-header {
-				font-size: 64px;
-				line-height: 64px;
-			}
-			.hero-title {
-				font-size: 24px;
-			}
-			.hero-date {
-				font-size: 18px;
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-		
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: white;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-			a {
-				text-decoration: none;
-			}
-		</style>
 	</head>
 
-	<body>
+	<body class={`${page} layout`}>
 		<Header />
 		<main>
 			<article>
@@ -89,11 +34,11 @@ const { title, description } = Astro.props;
 				<div class="prose">
 					<div class="title">
 						[
-              <a href={`${baseUrl}/about`}>about</a> |
-							{/* 
+              <a href={`${baseUrl}/about`}>about</a> |	
+							<!--
               <a href={`${baseUrl}/about/resume`}>resume</a> |
               <a href={`${baseUrl}/about/elevator-pitch`}>elevator pitch</a> |
-							*/}
+							-->
               <a href="mailto:brettmorriss@gmail.com" target="_blank">brettmorriss@gmail.com</a>
             ]
 						<hr />

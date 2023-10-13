@@ -7,12 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "compile:sass": "sass src/styles/sass/index.scss src/styles/global.css -w"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.1",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.1",
     "astro": "^3.2.3"
+  },
+  "devDependencies": {
+    "sass": "^1.69.3"
   }
 }

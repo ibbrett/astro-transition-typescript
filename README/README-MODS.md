@@ -43,3 +43,8 @@ Found 2 errors in the same file, starting at: tsconfig.json:8
 "allowImportingTsExtensions": false
 ```
 
+## added sass
+```bash
+npm -D i sass
+```
+

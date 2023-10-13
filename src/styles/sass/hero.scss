@@ -1,0 +1,22 @@
+.hero-container {
+	width: 100%;
+	text-align: center;
+}
+.hero {
+	background-color: $hero-bg;
+	padding: $hero-padding;
+	border-radius: $hero-border-radius;
+	color: $hero-color;
+	border: $hero-border;
+  display: inline-block;
+}
+.hero-header {
+	font-size: $hero-header-font-size;
+	line-height: $hero-header-font-size;
+}
+.hero-title {
+	font-size: $hero-title-font-size;
+}
+.hero-date {
+	font-size: $hero-date-font-size;
+}

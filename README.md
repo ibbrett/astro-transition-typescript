@@ -14,6 +14,7 @@ Astro framework TypeScript blog application to demontrate:
 | application links         | [README-LINKS](./README/README-LINKS.md)           |
 | glossary                  | [README-GLOSSARY](./README/README-GLOSSARY.md)     |
 | references                | [README-REFERENCES](./README/README-REFERENCES.md) |
+| todo                      | [README-TODO](./README/README-TODO.md)             |
 
 
 ## Prerequisites

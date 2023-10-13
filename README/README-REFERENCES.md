@@ -12,3 +12,7 @@
 | x-team.com             | [ES5 Array Iteration Methods](https://x-team.com/blog/javascript-es5-array-iteration-methods-explained/)                                |
 | developer.mozilla.org  | [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)                                               |
 | linkedin.com           | [Game-Changing Features in ES10](https://www.linkedin.com/pulse/javascript-evolution-tour-game-changing-features-es10-abdulmoiz-ahmer/) |
+
+
+## e262 references
+https://www-archive.mozilla.org/js/language/e262-3.pdf

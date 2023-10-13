@@ -1,0 +1,14 @@
+a {
+	color: $anchor-color;
+}
+a.footer {
+	color: $anchor-footer-color;
+	text-decoration: none;
+	margin-left: 5px;
+}
+a.footer:hover {
+	color: $anchor-footer-hover-color;
+}
+a:hover {
+	color: $anchor-hover-color;
+}

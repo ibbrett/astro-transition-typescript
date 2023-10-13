@@ -4,7 +4,6 @@ description: '5th Edition – ECMAScript 2009'
 pubDate: 'Dec 03 2009'
 ---
 
-Additions:
 - "strict mode"
 - JSON support
 - String.prototype.trim()

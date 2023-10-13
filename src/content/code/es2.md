@@ -4,4 +4,6 @@ description: '2nd Edition – ECMAScript 1998'
 pubDate: 'Dec 01 1998'
 ---
 
-- Editorial changes
+```js
+// Editorial changes
+```

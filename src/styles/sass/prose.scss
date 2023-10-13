@@ -1,0 +1,10 @@
+.prose {
+	width: auto;
+	max-width: calc(100% - 1em);
+	margin: auto;
+	padding: 1em;
+	color: rgb(var(--gray-dark));
+}
+.prose .label {
+	font-weight: bold;
+}

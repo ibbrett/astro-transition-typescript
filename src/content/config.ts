@@ -7,7 +7,6 @@ const blog = defineCollection({
     description: z.string(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
   }),
 });
 
@@ -19,4 +18,12 @@ const about = defineCollection({
   }),
 });
 
-export const collections = { blog, about };
+const code = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+  }),
+});
+
+export const collections = { blog, about, code };
