@@ -7,7 +7,8 @@ import { getCollection } from 'astro:content';
 import Hero from '../components/Hero.astro';
 import ProseTitleLabel from '../components/ProseTitleLabel.astro';
 const page = 'code';
-const redirectPage = "blog";
+const redirectPage = 'blog';
+const label = page.charAt(0).toUpperCase() + page.slice(1);
 const posts = (await getCollection(page)).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
@@ -23,9 +24,9 @@ const { title, description, pubDate, header_title } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<Hero title={title} pubDate={pubDate} redirectPage="blog" />
+				<Hero title={title} pubDate={pubDate} redirectPage={redirectPage} />
 				<div class="prose">
-					<ProseTitleLabel page={page} posts={posts} label="Code" />
+					<ProseTitleLabel page={page} posts={posts} label={label} />
 					<slot />
 				</div>
 			</article>

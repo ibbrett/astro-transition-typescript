@@ -4,17 +4,10 @@ description: '9th Edition – ECMAScript 2018'
 pubDate: 'Jun 01 2018'
 ---
 
+- <a href="https://tc39.es/proposal-template-literal-revision/">Lifting template literal restriction</a>
+  - The proposed feature will redefine the cooked value for illegal escape sequences to “undefined”. This lifting of restriction will allow illegal values and makes embedding of language simpler.
 - <a href="https://exploringjs.com/impatient-js/ch_regexps.html" target="_blank">regular expressions</a>
-  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: y (sticky)
-  - support for hasIndices in ES13
+  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: /s (dotAll)
+  - support for /d (hasIndices) in ES13
+- spread operator updates
 
-```bash
-// The spread operator allows for the easy copying of object properties, as shown below.
-let object = {a: 1, b: 2}
-
-let objectClone = Object.assign({}, object) // before ES2018
-let objectClone = {...object} // ES2018 syntax
-
-let otherObject = {c: 3, ...object}
-console.log(otherObject) // -> {c: 3, a: 1, b: 2}
-```

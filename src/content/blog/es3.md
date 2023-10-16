@@ -5,7 +5,7 @@ pubDate: 'Dec 01 1999'
 ---
 
 - <a href="https://exploringjs.com/impatient-js/ch_regexps.html" target="_blank">regular expressions</a>
-  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: g (global), i (ignoreCase), m (multiline)
+  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: /g (global), /i (ignoreCase), /m (multiline)
   - support for unicode and sticky to come in ES6, dotAll in ES9, hasIndices in ES13
 - <a href="https://exploringjs.com/impatient-js/ch_exception-handling.html#the-try-statement" target="_blank">try/catch</a> exception handling
 - new control statements

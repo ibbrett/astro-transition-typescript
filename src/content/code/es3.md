@@ -13,24 +13,29 @@ var subStr = 'In Exchange For';
 
 // returns boolean - is there a match?
 reg.test(str);
+// Expected output: true
 
 // returns a match object for the first match of regExp in str
 // run a second time it returns the second match found, and so on
 reg.exec(str);
+Expected output: ['Pro', index: 14, input: 'Quid Pro Quo, Pro Bono', groups: undefined]
 
 // returns matched values
 str.match(reg);
+Expected output: ['Pro', 'Pro']
 
 // returns index of first match found
 str.search(reg);
+Expected output: 5
 
 // string replace
 str.replace(reg, subStr);
+Expected output: 'Quid In Exchange For Quo, In Exchange For Bono'
 
 // properties
-reg.source
-reg.flags
-reg.lastIndex
+reg.source    // Expected output: 'pro'
+reg.flags     // Expected output: 'gi'
+reg.lastIndex // Expected output: 0
 ```
 
 ```js
@@ -41,8 +46,10 @@ try {
 }
 catch (error) {
   console.error(error);
-  // Expected output: ReferenceError: nonExistentFunction is not defined
 } finally {
   console.error("This occurs regardless of whether an exception was thrown or caught.");
 } 
+// Expected output: 
+ReferenceError: nonExistentFunction is not defined
+This occurs regardless of whether an exception was thrown or caught.
 ```

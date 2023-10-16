@@ -12,7 +12,7 @@ let objectClone = Object.assign({}, object) // before ES2018
 let objectClone = {...object} // ES2018 syntax
 
 let otherObject = {c: 3, ...object}
-console.log(otherObject) // -> {c: 3, a: 1, b: 2}
+// Expected output: true {c: 3, a: 1, b: 2}
 ```
 
 ```js

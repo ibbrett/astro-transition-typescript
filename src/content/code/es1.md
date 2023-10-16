@@ -41,4 +41,7 @@ var teams = [team1, team2];
 for (var i = 0; i < teams.length; i++) {
     teams[i].declaration();
 }
+// Expected output: 
+My favorite team is the Seattle Seahawks. Go Hawks!
+My favorite team is the San Francisco 49ers. Go Niners!
 ```

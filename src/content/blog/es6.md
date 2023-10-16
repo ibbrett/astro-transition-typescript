@@ -6,14 +6,14 @@ pubDate: 'Jun 17 2015'
 
 
 - <a href="https://exploringjs.com/impatient-js/ch_regexps.html" target="_blank">regular expressions</a>
-  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: y (sticky), u (unicode)
+  - <a href="https://exploringjs.com/impatient-js/ch_regexps.html#reg-exp-flags" target="_blank">flag support</a>: /y (sticky), /u (unicode)
   - support for dotAll to come in ES9, hasIndices in ES13
 - block-scoping of variables and functions
 - let, const
 - arrow functions
-- Promises
-- Classes
-- Spread Operator (...)
+- promises
+- the ability to create and inherit <b>classes</b> 
+- spread operator (...)
 - default parameter values
 - Array methods: find(), findIndex()
 - for ... in loop
