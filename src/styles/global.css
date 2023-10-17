@@ -1,3 +1,55 @@
+@keyframes slide-right {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes change-color-code {
+  0% {
+    color: #002244;
+    background-color: #69BE28;
+  }
+  50% {
+    color: #0055aa;
+    background-color: #9ee06c;
+  }
+  100% {
+    color: #002244;
+    background-color: #69BE28;
+  }
+}
+@keyframes change-color-blog {
+  0% {
+    color: #002244;
+    background-color: #69BE28;
+  }
+  50% {
+    color: #0055aa;
+    background-color: #83d742;
+  }
+  100% {
+    color: #002244;
+    background-color: #69BE28;
+  }
+}
+.slide-right {
+  animation: slide-right 1500ms;
+}
+
+.slide-left {
+  animation: slide-left 1500ms;
+}
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -34,8 +86,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 600px;
+  /*background: linear-gradient(var(--gray-gradient)) no-repeat;*/
+  /*background-size: 100% 600px;*/
+  background-color: rgba(254, 254, 254, 0.1);
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
@@ -162,7 +215,8 @@ a:hover {
 /** footer **/
 footer {
   padding: 2em 1em 6em 1em;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-color: rgba(254, 254, 254, 0.1);
+  /*background: linear-gradient(var(--gray-gradient)) no-repeat;*/
   color: rgb(var(--gray));
   text-align: center;
 }
@@ -223,15 +277,15 @@ footer .social-links a:hover {
 }
 
 .about main {
-  background-color: #b2b7bb;
+  background-color: rgba(254, 254, 254, 0.1);
 }
 
 .code main {
-  background-color: #b2b7bb;
+  background-color: rgba(254, 254, 254, 0.1);
 }
 
 .blog main {
-  background-color: #b2b7bb;
+  background-color: rgba(254, 254, 254, 0.1);
 }
 
 .code .astro-code {
@@ -244,10 +298,8 @@ footer .social-links a:hover {
 }
 
 .hero {
-  background-color: #69BE28;
   padding: 8px 96px;
   border-radius: 8px;
-  color: #002244;
   border: 2px solid white;
   display: inline-block;
 }
@@ -263,6 +315,35 @@ footer .social-links a:hover {
 
 .hero-date {
   font-size: 18px;
+}
+
+.about .hero {
+  background-color: #69BE28;
+  color: #002244;
+}
+
+.code .hero {
+  background-color: #69BE28;
+  color: #002244;
+}
+
+.code .hero a {
+  color: #002244;
+}
+
+.blog .hero {
+  background-color: #69BE28;
+  color: #002244;
+}
+
+.blog .hero a {
+  color: #002244;
+}
+
+.about .hero a:hover,
+.blog .hero a:hover,
+.code .hero a:hover {
+  color: #2337ff;
 }
 
 .prose {

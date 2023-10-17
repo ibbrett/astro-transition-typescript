@@ -34,22 +34,52 @@ console.log(undefinedA(true));
 ```
 
 ```js
-// ES6 ECMAScript 2015 introduced the /y (sticky) flag
-
-// The sticky accessor property of RegExp instances returns whether or not the y flag is used with this regular expression.
-// For some tasks, including the lexical analysis, that’s just wrong. We need to find a match exactly at the given position at the text, not somewhere after it. And that’s what the flag y is for.
-// The flag y makes regexp.exec to search exactly at position lastIndex, not “starting from” it.
+// test lastIndex with a regular expression with /g (global), /i (ignoreCase) flags
 
 const str = 'Quid Pro Quo, Pro Bono';
-const regexp = /\w+/y;
+let re = /pro/ig;
 
-regexp.lastIndex = 4;
-console.log( regexp.exec(str) ); // null (there's a space at position 4, not a word)
+re.test(str);
+console.log('lastIndex: ' + re.lastIndex);
+// Expected output: 8, where to set index for start of next match, the space after the first 'Pro'
 
-regexp.lastIndex = 5;
-console.log( regexp.exec(str) ); // Pro (word at position 5)
+re.test(str);
+console.log('lastIndex: ' + re.lastIndex);
+// Expected output: 17, where to set index for start of next match, the space after the second 'Pro'
 
-console.log( regexp.sticky ); // expected: true
+re.test(str);
+console.log('lastIndex: ' + re.lastIndex);
+// Expected output: 0, 'Pro' not found, reset lastIndex to 0
+
+re.test(str);
+console.log('lastIndex: ' + re.lastIndex);
+// Expected output: 8, lastIndex was reset back to 0. Therefore, first 'Pro' found again
+
+// ES6 ECMAScript 2015 introduced the /y (sticky) flag
+// For some tasks, including the lexical analysis, we need to find a match exactly at the given position at the text, not somewhere after it. And that’s what the flag y is for.
+// keep in mind: The 'Y' flag, or sticky flag, makes a regex match exactly at position lastIndex, not “starting from” it.
+// let's redefine our regular expression and use exec to find a word
+
+re = /\w+/y; // match a word
+
+console.log( 'Is sticky flag set: ' + re.sticky );
+// Expected output: true
+
+console.log( re.exec(str) ); 
+// Expected output: 'Quid' is found at index 0, re.lastIndex is set to 4, the space after 'Quid'
+
+console.log( 'lastIndex: ' + re.lastIndex ); 
+// Expected output: 4, lastIndex is set to 4, the space after 'Quid'
+
+console.log( re.exec(str) ); 
+// Expected output: null, this is because The flag 'y' makes regexp.exec(str) search strictly at position lastIndex, not "starting from" it. In this case the index was set to 4 after the first match and index 4 contains a space, not a word.
+
+re.lastIndex = 5;
+console.log( 'lastIndex: ' + re.lastIndex ); 
+// Expected output: 5, we just set lastIndex to 5, where the next word starts
+
+console.log( re.exec(str) ); 
+// Expected output: 'Pro'
 ```
 
 ```js

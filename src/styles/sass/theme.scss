@@ -1,20 +1,31 @@
 // astro-defined colors, defined in :root
 $astro-root-accent: #2337ff; // --accent: #2337ff;
 
-$about-bg: #b2b7bb; // navajowhite
-$code-bg: #b2b7bb;  // goldenrod, #A5ACAF
-$blog-bg: #b2b7bb;  // #82cceb
-
-$hero-bg: #69BE28;
-$hero-color: #002244;
 $hero-border: 2px solid white;
 $hero-padding: 8px 96px;
 $hero-border-radius: 8px;
 $hero-header-font-size: 64px;
 $hero-title-font-size: 24px;
 $hero-date-font-size: 18px;
- 
+
+$palette-base: rgba(254,254,254, .1);
+$palette-bg: #69BE28;
+$palette-bold1: #002244; // about
+$palette-bold2: #002244; // blog
+$palette-bold3: #002244; // code
+
+$about-hero-bg: $palette-bg;
+$about-hero-color: $palette-bold1;
+$blog-hero-bg: $palette-bg;
+$blog-hero-color: $palette-bold2;
+$code-hero-bg: $palette-bg;
+$code-hero-color: $palette-bold3;
+
+$about-bg: $palette-base;
+$code-bg: $palette-base;
+$blog-bg: $palette-base;
+
 $anchor-color: #002244;
-$anchor-footer-color: rgb(96, 115, 159); // rgb(var(--gray));
+$anchor-footer-color: rgb(96, 115, 159);
 $anchor-hover-color: $astro-root-accent;
 $anchor-footer-hover-color: black;

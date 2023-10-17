@@ -3,6 +3,29 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_HEADER_TITLE } from '../consts';
+import { slide } from 'astro:transitions';
+
+/*
+const anim = {
+  old: {
+    name: 'fadeIn',
+    duration: '1.2s',
+    easing: 'linear',
+    fillMode: 'forwards',
+  },
+  new: {
+    name: 'fadeOut',
+    duration: '1.3s',
+    easing: 'linear',
+    fillMode: 'backwards',
+  }
+};
+
+const mySlide = {
+  forwards: anim,
+  backwards: anim,
+};
+*/
 ---
 
 <!doctype html>
@@ -12,7 +35,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_HEADER_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<main transition:animate="slide">
+		
+		<main class="slide-right">
 			<h2>🧑‍🚀 Hello ECMAScript Engineer!</h2>
 			<p>
 				Welcome to the <a href="https://astro.build/">Astro</a> blog for ECMAScript. 

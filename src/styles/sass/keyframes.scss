@@ -1,0 +1,57 @@
+@keyframes slide-right {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes change-color-code {
+  0% {
+    color: $code-hero-color;
+    background-color: $code-hero-bg;
+  }
+  50% {
+    color: lighten($code-hero-color, 20%);
+    background-color: lighten($code-hero-bg, 20%);
+  }
+  100% {
+    color: $code-hero-color;
+    background-color: $code-hero-bg;
+  }
+}
+
+@keyframes change-color-blog {
+  0% {
+    color: $blog-hero-color;
+    background-color: $blog-hero-bg;
+  }
+  50% {
+    color: lighten($blog-hero-color, 20%);
+    background-color: lighten($blog-hero-bg, 10%);
+  }
+  100% {
+    color: $blog-hero-color;
+    background-color: $blog-hero-bg;
+  }
+}
+
+.slide-right {
+  animation: slide-right 1500ms;
+} 
+
+.slide-left {
+  animation: slide-left 1500ms;
+} 
+
+

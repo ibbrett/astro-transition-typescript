@@ -12,7 +12,7 @@ pubDate: 'Jun 17 2015'
 - let, const
 - arrow functions
 - promises
-- the ability to create and inherit <b>classes</b> 
+- the ability to create and inherit classes
 - spread operator (...)
 - default parameter values
 - Array methods: find(), findIndex()

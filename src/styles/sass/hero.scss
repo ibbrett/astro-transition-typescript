@@ -3,10 +3,8 @@
 	text-align: center;
 }
 .hero {
-	background-color: $hero-bg;
 	padding: $hero-padding;
 	border-radius: $hero-border-radius;
-	color: $hero-color;
 	border: $hero-border;
   display: inline-block;
 }
@@ -19,4 +17,33 @@
 }
 .hero-date {
 	font-size: $hero-date-font-size;
+}
+
+.about .hero {
+	background-color: $about-hero-bg;
+	color: $about-hero-color;
+}
+
+.code .hero {
+	background-color: $code-hero-bg;
+	color: $code-hero-color;
+}
+
+.code .hero a {
+	color: $code-hero-color;
+}
+
+.blog .hero {
+	background-color: $blog-hero-bg;
+	color: $blog-hero-color;
+}
+
+.blog .hero a {
+	color: $blog-hero-color;
+}
+
+.about .hero a:hover,
+.blog .hero a:hover,
+.code .hero a:hover {
+	color: $anchor-hover-color;
 }
