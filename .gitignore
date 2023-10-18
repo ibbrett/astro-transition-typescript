@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # archive files
 _archive/
+
+# typescript files
+typescript-source
+typescript-builds

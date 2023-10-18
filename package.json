@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "compile:sass": "sass src/styles/sass/index.scss src/styles/global.css -w"
+    "compile:sass": "sass src/styles/sass/index.scss src/styles/global.css -w",
+    "compile:ts" : "npx tsc"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.1",
