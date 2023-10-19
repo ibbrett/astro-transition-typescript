@@ -7,6 +7,12 @@
 	}
 	h2 {font-size: 2.441em;}
 	h4 {font-size: 1.953em;}
+	.head-shot {
+		width: 220px;
+	}
+	.layout header nav h2 a div {
+		display: inline;
+	}
 }
 
 @media (min-width: 1200px) {

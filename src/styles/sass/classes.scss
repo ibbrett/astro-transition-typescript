@@ -34,6 +34,10 @@
 	margin: 0;
 }
 
+.layout header nav h2 a div {
+	margin-right: 5px;
+}
+
 .about main {
 	background-color: $about-bg;
 }
@@ -77,5 +81,5 @@
 
 .head-shot {
 	width: 150px;
-	border-radius: 16px;
+	border-radius: 8px;
 }

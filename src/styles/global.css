@@ -276,6 +276,10 @@ footer .social-links a:hover {
   margin: 0;
 }
 
+.layout header nav h2 a div {
+  margin-right: 5px;
+}
+
 .about main {
   background-color: rgba(254, 254, 254, 0.1);
 }
@@ -319,7 +323,7 @@ footer .social-links a:hover {
 
 .head-shot {
   width: 150px;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .hero-container {
@@ -400,6 +404,12 @@ footer .social-links a:hover {
   }
   h4 {
     font-size: 1.953em;
+  }
+  .head-shot {
+    width: 220px;
+  }
+  .layout header nav h2 a div {
+    display: inline;
   }
 }
 @media (min-width: 1200px) {
