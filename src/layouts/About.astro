@@ -3,9 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { Image } from 'astro:assets';
-import BrettMorrissHeadShot from '../images/brett-morriss-head-shot.jpg';
+// import { Image } from 'astro:assets';
+// import BrettMorrissHeadShot from '../images/brett-morriss-head-shot.jpg';
 const baseUrl = await import.meta.env.BASE_URL;
+const gitHubProfileImage = "https://github.com/ibbrett.png";
 const page = 'about';
 type Props = CollectionEntry<'about'>['data'];
 const { title, description, header_title } = Astro.props;
@@ -24,7 +25,7 @@ const { title, description, header_title } = Astro.props;
 						<div class="hero-header">Brett Morriss</div>
 						<div class="hero-title">ECMAScript Engineer</div>
 						<div class="date">
-							<Image class="head-shot" src={BrettMorrissHeadShot} alt="Brett Morriss head shot" />
+							<img class="head-shot" src={gitHubProfileImage} alt="Brett Morriss head shot" />
 						</div>
 					</div>}
 				</div>
