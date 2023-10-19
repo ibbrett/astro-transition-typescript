@@ -3,13 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import { slide } from 'astro:transitions';
-// import { getCollection } from 'astro:content';
-const now = new Date();
+import { Image } from 'astro:assets';
+import BrettMorrissHeadShot from '../images/brett-morriss-head-shot.jpg';
 const baseUrl = await import.meta.env.BASE_URL;
 const page = 'about';
-// const posts = (await getCollection('about'));
 type Props = CollectionEntry<'about'>['data'];
 const { title, description, header_title } = Astro.props;
 ---
@@ -18,19 +15,18 @@ const { title, description, header_title } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} header_title={header_title} />
 	</head>
-
 	<body class={`${page} layout`}>
 		<Header />
 		<main class="slide-left">
 			<article>
 				<div class="hero-container">
 					{title && <div class="hero">
-						<div class="hero-header">{title.split(' ')[0]}</div>
-						<div class="hero-title">{title.split(' ')[1]}&nbsp;{title.split(' ')[2]}</div>
+						<div class="hero-header">Brett Morriss</div>
+						<div class="hero-title">ECMAScript Engineer</div>
 						<div class="date">
-							<FormattedDate date={now} />
+							<Image class="head-shot" src={BrettMorrissHeadShot} alt="Brett Morriss head shot" />
 						</div>
-						</div>}
+					</div>}
 				</div>
 				<div class="prose">
 					<div class="title">

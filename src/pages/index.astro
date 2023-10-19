@@ -3,29 +3,13 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_HEADER_TITLE } from '../consts';
-import { slide } from 'astro:transitions';
-
-/*
-const anim = {
-  old: {
-    name: 'fadeIn',
-    duration: '1.2s',
-    easing: 'linear',
-    fillMode: 'forwards',
-  },
-  new: {
-    name: 'fadeOut',
-    duration: '1.3s',
-    easing: 'linear',
-    fillMode: 'backwards',
-  }
-};
-
-const mySlide = {
-  forwards: anim,
-  backwards: anim,
-};
-*/
+const astroUrl = "https://astro.build/";
+const gitHubUrl = "https://github.com/ibbrett";
+const gitHubProfileImage = "https://github.com/ibbrett.png";
+const ecma262Url = "https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf";
+const refUrl = "https://github.com/ibbrett/astro-transition-typescript/tree/master/README/README-REFERENCES.md";
+const featuresUrl = "/astro-transition-typescript/blog";
+const aboutUrl = "/astro-transition-typescript/about";
 ---
 
 <!doctype html>
@@ -35,42 +19,30 @@ const mySlide = {
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		
 		<main class="slide-right">
-			<h2>🧑‍🚀 Hello ECMAScript Engineer!</h2>
+			<div class="home-header">
+			<a href={gitHubUrl} target="_blank"><img src={gitHubProfileImage}></a> 
+			<h4 class="label">Hello ECMAScript Engineers!</h4>
+		</div>
 			<p>
-				Welcome to the <a href="https://astro.build/">Astro</a> blog for ECMAScript. 
-				This site is a demontration of a simple Astro blog showcasing the different versions of 
-				ECMAScript and View Transitions.
+				This site is a simple <a href={astroUrl} target="_blank">Astro</a> blog with view transitions showcasing the different versions of 
+				ECMAScript.
 			</p>
 			<p>
 				JavaScript was created in 1995 by Brendan Eich of Netscape.
 			</p>
 			<p>
 				To standardize the language Netscape submitted JavaScript to the European Computer Manufacturers Association in 1996.
-				This led to the first official release of <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf">ECMA-262</a> in 1997.
+				This led to the first official release of <a href={ecma262Url} target="_blank">ECMA-262</a> in 1997.
 			</p>
-			<!-- 
 			<p>
-				I'm a full Stack Engineer who loves to use Node on the backend, 
-				PostgreSQL and Express server for data storage and API server, and
-				React for the presentation layer. I like using the latest tools at my disposal, things like:
-				<ul>
-					<li>NextJS, Tailwind and Vercel</li>
-					<li>TypeScript with the latest updates in ECMAScript</li>
-					<li>AWS to authenticate users, serve up sites and assets, and handle heavy loads</li>
-				</ul>
-			</p>
-			-->
-			<p>
-				As a full stack engineer who uses both Node on the backend and React with JavaScript/TypeScript on the frontend these updates are wonderful. 
-				The options continue to increase adding better options to write increasingly better code. 
+				As a full stack engineer who uses both Node on the backend and React on the frontend with JavaScript/TypeScript these updates are wonderful, adding more and more options to write increasingly better code. 
 			</p>
 			<p>To find out more about: </p>
 			<ul>
-				<li>ECMAScript versions, take a look at the <code><a href="/astro-transition-typescript/blog">Blog</a></code></li>
-				<li>Me, take a look at the <code><a href="/astro-transition-typescript/about">About</a> section</code></li>
-				<li>Sources for ECMAScript information, take a look at <code><a href="https://github.com/ibbrett/astro-transition-typescript/tree/master/README/README-REFERENCES.md">References</a> readme</code></li>
+				<li>ECMAScript versions, take a look at the <code><a href={featuresUrl}>Blog</a></code></li>
+				<li>me, take a look at the <code><a href={aboutUrl}>About</a> section</code></li>
+				<li>sources for ECMAScript information, take a look at the <code><a href={refUrl} target="_blank">References</a> readme</code></li>
 			</ul>
 			<p>Enjoy!</p>
 		</main>
