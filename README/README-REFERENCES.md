@@ -9,6 +9,7 @@
 | webreference.com       | [ECMAScript Versions](https://webreference.com/javascript/basics/versions/)                                                             |
 | logismiko.medium.com   | [ECMAScript 1](https://logismiko.medium.com/javascript-versions-ecmascript-1-1997-391b631c0e3c)                                         |
 | exploringjs.com        | [Control flow statements](https://exploringjs.com/impatient-js/ch_control-flow.html)                                                    |
+| exploringjs.com        | [JavaScript for impatient programmers](https://exploringjs.com/impatient-js/toc.html)                                                   |
 | x-team.com             | [ES5 Array Iteration Methods](https://x-team.com/blog/javascript-es5-array-iteration-methods-explained/)                                |
 | developer.mozilla.org  | [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)                                               |
 | linkedin.com           | [Game-Changing Features in ES10](https://www.linkedin.com/pulse/javascript-evolution-tour-game-changing-features-es10-abdulmoiz-ahmer/) |
