@@ -1,19 +1,22 @@
 # Astro Transition TypeScript Blog References 
 
 ## sources used in this blog 
-| Site                   | Link                                                                                                                                    |
-| -------------          | -------------                                                                                                                           |
-| wikipedia.org          | [ECMAScript version history](https://en.wikipedia.org/wiki/ECMAScript_version_history)                                                  |
-| w3schools.com          | [JavaScript Versions](https://www.w3schools.com/js/js_versions.asp)                                                                     |
-| ecma-international.org | [ECMA-262](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)                                           |
-| webreference.com       | [ECMAScript Versions](https://webreference.com/javascript/basics/versions/)                                                             |
-| logismiko.medium.com   | [ECMAScript 1](https://logismiko.medium.com/javascript-versions-ecmascript-1-1997-391b631c0e3c)                                         |
-| exploringjs.com        | [Control flow statements](https://exploringjs.com/impatient-js/ch_control-flow.html)                                                    |
-| exploringjs.com        | [JavaScript for impatient programmers](https://exploringjs.com/impatient-js/toc.html)                                                   |
-| x-team.com             | [ES5 Array Iteration Methods](https://x-team.com/blog/javascript-es5-array-iteration-methods-explained/)                                |
-| developer.mozilla.org  | [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)                                               |
-| linkedin.com           | [Game-Changing Features in ES10](https://www.linkedin.com/pulse/javascript-evolution-tour-game-changing-features-es10-abdulmoiz-ahmer/) |
-
+| Site                   | Link          |
+| -------------          | ------------- |
+| wikipedia.org          | [ECMAScript version history](https://en.wikipedia.org/wiki/ECMAScript_version_history) |
+| w3schools.com          | [JavaScript Versions](https://www.w3schools.com/js/js_versions.asp) |
+| ecma-international.org | [ECMA-262](https://www.ecma-international.org/publications-and-standards/standards/ecma-262) |
+| webreference.com       | [ECMAScript Versions](https://webreference.com/javascript/basics/versions) |
+| medium.com             | [ECMAScript 1](https://logismiko.medium.com/javascript-versions-ecmascript-1-1997-391b631c0e3c) |
+| exploringjs.com        | [Control flow statements](https://exploringjs.com/impatient-js/ch_control-flow.html) |
+| exploringjs.com        | [JavaScript for impatient programmers](https://exploringjs.com/impatient-js/toc.html) |
+| exploringjs.com        | [Exploring ES2016 and ES2017](https://exploringjs.com/es2016-es2017) |
+| exploringjs.com        | [JavaScript for impatient programmers](https://exploringjs.com/impatient-js) |
+| x-team.com             | [ES5 Array Iteration Methods](https://x-team.com/blog/javascript-es5-array-iteration-methods-explained) |
+| mozilla.org            | [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) |
+| sitepen.com            | [The 5 features of ES8 and a wishlist for ES9](https://www.sitepen.com/blog/the-5-features-of-es8-and-a-wishlist-for-es9) |
+| linkedin.com           | [Game-Changing Features in ES10](https://www.linkedin.com/pulse/javascript-evolution-tour-game-changing-features-es10-abdulmoiz-ahmer) |
+| infoworld.com          | [All the new features in ECMAScript 2023 (ES14)](https://www.infoworld.com/article/3703571/all-the-new-features-in-ecmascript-2023-es14.html) |
 
 ## e262 v3 reference
 [ECMAScript Language Specification Edition 3, March 24 2000](https://www-archive.mozilla.org/js/language/e262-3.pdf)

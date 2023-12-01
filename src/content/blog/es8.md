@@ -15,4 +15,5 @@ pubDate: 'Jun 01 2017'
   - It introduces a new constructor <i>SharedArrayBuffer</i> and a namespace object <i>Atomics</i> with helper functions
   - The SharedArrayBuffer global object essentially stores data in a shared memory space. To help avoid race conditions, the Atomics global object provides various methods to lock the shared memory when a thread is using its data. It also provides methods to update the data in that shared memory safely.
 - trailing commas for function parameters
-  - function test(a,b,c, )
+  - function test(a,b,c,){}
+

@@ -22,7 +22,7 @@ pubDate: 'Jun 17 2015'
 - Python-style generators
 - binary data
 - typed arrays
-- new collections (maps, sets and WeakMap)
+- new collections (Map, Set and WeakMap)
 - number and math enhancements
 - reflection
 - proxies (metaprogramming for virtual objects and wrappers)
@@ -32,4 +32,3 @@ In ES5 there were three type of scope in JavaScript: function, global and lexica
 There was no block scope in ES5 other than function block , catch block and object block. 
 Block scope came to existence for other blocks like loops, conditional statements, etc. with introduction of let and const keywords in ES6. 
 ```
-
