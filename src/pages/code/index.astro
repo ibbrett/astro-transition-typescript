@@ -32,6 +32,7 @@ const posts = (await getCollection(page)).sort(
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
+			/*
 			ul li:first-child {
 				width: 100%;
 				margin-bottom: 1rem;
@@ -42,7 +43,7 @@ const posts = (await getCollection(page)).sort(
 			}
 			ul li:first-child .title {
 				font-size: 2.369rem;
-			}
+			}*/
 			ul li img {
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
@@ -65,18 +66,20 @@ const posts = (await getCollection(page)).sort(
 					width: 100%;
 					text-align: center;
 				}
+				/*
 				ul li:first-child {
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
 					font-size: 1.563em;
-				}
+				}*/
 			}
 		</style>
 	</head>
 	<body class={`${page} layout`}>
 		<Header />
 		<main>
+			<h1 class="blog-header-label">Code Snippets</h1>
 			<section>
 				<ul>
 					{

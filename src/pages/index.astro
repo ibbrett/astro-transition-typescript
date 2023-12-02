@@ -9,6 +9,7 @@ const gitHubProfileImage = "https://github.com/ibbrett.png";
 const ecma262Url = "https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf";
 const refUrl = "https://github.com/ibbrett/astro-transition-typescript/tree/master/README/README-REFERENCES.md";
 const featuresUrl = "/astro-transition-typescript/blog";
+const codeUrl = "/astro-transition-typescript/code";
 const aboutUrl = "/astro-transition-typescript/about";
 ---
 
@@ -22,27 +23,35 @@ const aboutUrl = "/astro-transition-typescript/about";
 		<main class="slide-right">
 			<div class="home-header">
 			<a href={gitHubUrl} target="_blank"><img src={gitHubProfileImage}></a> 
-			<h4 class="label">Hello ECMAScript Engineers!</h4>
+			<h4 class="label">Hello ECMAScript Enthusiasts!</h4>
 		</div>
 			<p>
-				This site is a simple <a href={astroUrl} target="_blank">Astro</a> blog with view transitions showcasing the different versions of 
-				ECMAScript.
+				Curious about the evolution of ECMAScript?
 			</p>
+
 			<p>
-				JavaScript was created in 1995 by Brendan Eich of Netscape.
+				<div>JavaScript was created in 1995 by Brendan Eich of Netscape.</div>
+				<div>Microsoft introduced JScript in Internet Explorer 3 in 1996.</div>
+				<div>At this time, it wasn't uncommon to script with JavaScript, JScript and VBScript.</div>
 			</p>
+
 			<p>
-				To standardize the language Netscape submitted JavaScript to the European Computer Manufacturers Association in 1996.
+				Each Web browser and server that supports ECMAScript supplies its own host environment, completing the
+				ECMAScript execution environment.
+				</p>
+
+
+			<p>
+				To standardize the language Netscape submitted JavaScript to the European Computer Manufacturers Association (ECMA) in 1996.
 				This led to the first official release of <a href={ecma262Url} target="_blank">ECMA-262</a> in 1997.
 			</p>
-			<p>
-				As a full stack engineer who uses both Node on the backend and React on the frontend with JavaScript/TypeScript these updates are wonderful, adding more and more options to write increasingly better code. 
-			</p>
+
 			<p>To find out more about: </p>
 			<ul>
-				<li>ECMAScript versions, take a look at the <code><a href={featuresUrl}>Blog</a></code></li>
+				<li>ECMAScript version features, take a look at the <code><a href={featuresUrl}>Blog</a></code></li>
+				<li>ECMAScript version code samples, take a look at the <code><a href={codeUrl}>Code</a></code></li>
 				<li>me, take a look at the <code><a href={aboutUrl}>About</a> section</code></li>
-				<li>sources for ECMAScript information, take a look at the <code><a href={refUrl} target="_blank">References</a> readme</code></li>
+				<!--li>sources for ECMAScript information, take a look at the <code><a href={refUrl} target="_blank">References</a> readme</code></li-->
 			</ul>
 			<p>Enjoy!</p>
 		</main>
