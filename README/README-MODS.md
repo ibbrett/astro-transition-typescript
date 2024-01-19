@@ -48,3 +48,21 @@ Found 2 errors in the same file, starting at: tsconfig.json:8
 npm -D i sass
 ```
 
+## added mdx - 01/17/2024
+```bash
+$ npx astro add mdx
+✔ Resolving packages...
+
+  Astro will run the following command:
+  If you skip this step, you can always run it yourself later
+
+ ╭───────────────────────────╮
+ │ npm install @astrojs/mdx  │
+ ╰───────────────────────────╯
+
+✔ Continue? … yes
+✔ Installing dependencies...
+  
+   success  Configuration up-to-date.
+```
+

@@ -1,0 +1,37 @@
+---
+title: "ES14 ECMAScript 2023"
+description: "14th Edition – ECMAScript 2023"
+pubDate: "Jun 01 2023"
+---
+
+import Methods from "../../components/Methods.astro";
+export const methodsLabel = "new Array methods";
+export const methods = [
+  {
+    name: "toSorted",
+    desc: "the copying counterpart of the sort() method",
+  },
+  {
+    name: "toReversed",
+    desc: "the copying counterpart of the reverse() method",
+  },
+  {
+    name: "toSpliced",
+    desc: "the copying counterpart of the splice() method",
+  },
+  {
+    name: "with",
+    desc: "the copying counterpart of using the bracket notation to change the value of a given index",
+  },
+  {
+    name: "findLast",
+    desc: "iterates the array in reverse order and returns the value of the first element that satisfies the provided testing function",
+  },
+];
+export const symbolPath =
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol";
+
+<Methods label={methodsLabel} list={methods} />
+
+- added support for #! shebang comments at the beginning of files to better facilitate executable ECMAScript files
+- allowed the use of most <a href={symbolPath} target="_blank">Symbols</a> as keys in weak collections.
