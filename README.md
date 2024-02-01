@@ -1,8 +1,9 @@
-# Astro Transition TypeScript Blog
+# ECMAScript
 
-Astro framework TypeScript blog application to demontrate:
-- view transitons, and
-- ES version differences
+Utilizing Astro framework 
+- template: blog
+- content: ES version differences
+- behavior: view transitions
 
 ## Readme Files
 | Description               | File                                               |

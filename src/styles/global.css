@@ -325,10 +325,6 @@ footer .social-links a:hover {
   margin: 0 0 0.5em 0;
 }
 
-.blog-header-label {
-  text-align: center;
-}
-
 .about main {
   background-color: rgba(254, 254, 254, 0.1);
 }
@@ -426,6 +422,10 @@ footer .social-links a:hover {
 }
 .layout header nav h2 a div {
   margin-right: 5px;
+}
+.layout .header-label {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 801px) {

@@ -1,3 +1,3 @@
-# Astro Transition TypeScript Blog Glossary 
+# Glossary 
 
 - ECMA: European Computer Manufacturers Association

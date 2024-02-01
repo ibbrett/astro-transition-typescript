@@ -1,4 +1,4 @@
-# Astro Transition TypeScript Blog Modifications
+# Mods
 
 Application modifications to add View Transitions and implement TypeScript ES Version differences
 
