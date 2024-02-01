@@ -3,30 +3,19 @@ title: "ES14 ECMAScript 2023"
 description: "14th Edition – ECMAScript 2023"
 pubDate: "Jun 01 2023"
 ---
-
+import {frontmatter as ToSortedPost} from '../Array/toSorted.mdx'
+import {frontmatter as ToReversedPost} from '../Array/toReversed.mdx'
+import {frontmatter as ToSplicedPost} from '../Array/toSpliced.mdx'
+import {frontmatter as WithPost} from '../Array/with.mdx'
+import {frontmatter as FindLastPost} from '../Array/findlast.mdx'
 import Methods from "../../components/Methods.astro";
 export const methodsLabel = "new Array methods";
 export const methods = [
-  {
-    name: "toSorted",
-    desc: "the copying counterpart of the sort() method",
-  },
-  {
-    name: "toReversed",
-    desc: "the copying counterpart of the reverse() method",
-  },
-  {
-    name: "toSpliced",
-    desc: "the copying counterpart of the splice() method",
-  },
-  {
-    name: "with",
-    desc: "the copying counterpart of using the bracket notation to change the value of a given index",
-  },
-  {
-    name: "findLast",
-    desc: "iterates the array in reverse order and returns the value of the first element that satisfies the provided testing function",
-  },
+  { name: "toSorted", desc: ToSortedPost.what },
+  { name: "toReversed", desc: ToReversedPost.what },
+  { name: "toSpliced", desc:  ToSplicedPost.what },
+  { name: "with", desc: WithPost.what },
+  { name: "findLast", desc: FindLastPost.what }
 ];
 export const symbolPath =
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol";

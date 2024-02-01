@@ -26,4 +26,16 @@ const code = defineCollection({
   }),
 });
 
-export const collections = { blog, about, code };
+const arraySnippet = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    header_long_title: z.string(),
+    pubDate: z.coerce.date(),
+    header_title: z.string(),
+    syntax: z.string(),
+    parent: z.string(),
+    what: z.string(),
+  }),
+});
+
+export const collections = { blog, about, code, Array: arraySnippet };

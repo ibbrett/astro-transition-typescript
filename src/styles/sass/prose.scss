@@ -4,7 +4,17 @@
 	margin: auto;
 	padding: 1em;
 	color: rgb(var(--gray-dark));
-}
-.prose .label {
-	font-weight: bold;
+
+	.label {
+		font-weight: bold;
+	}
+
+	ul a {
+		@include postAnchor;
+	}
+
+	.copy-to-clipboard-wrap {
+		@include copyToClipboard;
+	}
+
 }

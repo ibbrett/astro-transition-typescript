@@ -197,17 +197,14 @@ h5 {
 a {
   color: #002244;
 }
-
 a.footer {
-  color: rgb(96, 115, 159);
+  color: #60739f;
   text-decoration: none;
   margin-left: 5px;
 }
-
 a.footer:hover {
   color: black;
 }
-
 a:hover {
   color: #2337ff;
 }
@@ -255,6 +252,64 @@ footer .social-links a:hover {
   white-space: nowrap;
 }
 
+.copied-to-clipboard .sr-only {
+  clip-path: unset;
+  font-size: 14px;
+  height: 34px;
+  display: inline-block;
+  width: 128px;
+  clip: auto;
+  left: -80px;
+  top: -25px;
+}
+
+.snippet a {
+  text-decoration: none;
+}
+.snippet .header {
+  font-size: 0;
+  /* remove whitespace */
+}
+.snippet .header .snippet-title,
+.snippet .header .snippet-link {
+  display: inline-block;
+  width: 50%;
+}
+.snippet .header .snippet-title {
+  font-size: 28px;
+  text-align: left;
+  font-weight: bold;
+}
+.snippet .header .snippet-link {
+  font-size: 16px;
+  text-align: right;
+}
+.snippet .snippet-long-title {
+  font-size: 14px;
+  text-align: left;
+}
+.snippet .snippet-syntax {
+  font-size: 16px;
+  text-align: left;
+  color: #2869be;
+  font-family: courier;
+}
+.snippet section.methods {
+  font-size: 17px;
+}
+.snippet section.methods h5 {
+  margin: 24px 0 0 0;
+}
+.snippet section.methods div {
+  line-height: 24px;
+}
+.snippet section.methods div a {
+  color: #69BE28;
+}
+.snippet section.methods div a:hover {
+  color: #2337ff;
+}
+
 .date {
   margin-bottom: 0.5em;
   color: white;
@@ -274,30 +329,6 @@ footer .social-links a:hover {
   text-align: center;
 }
 
-.layout main {
-  width: calc(100% - 2em);
-  max-width: 100%;
-  margin: 0;
-}
-
-@media (min-width: 801px) {
-  .layout main {
-    min-width: 750px;
-    max-width: 850px;
-    margin: auto;
-  }
-}
-/*
-@media (min-width: 721px) {
-	.blog-header-label {
-		margin-bottom: 50px;
-	}
-}
-*/
-.layout header nav h2 a div {
-  margin-right: 5px;
-}
-
 .about main {
   background-color: rgba(254, 254, 254, 0.1);
 }
@@ -310,8 +341,14 @@ footer .social-links a:hover {
   background-color: rgba(254, 254, 254, 0.1);
 }
 
-.code .astro-code {
+.blog .astro-code,
+.code .astro-code,
+.snippet .astro-code {
   font-size: 14px;
+}
+
+.meta {
+  color: red;
 }
 
 .home-header {
@@ -344,6 +381,60 @@ footer .social-links a:hover {
   border-radius: 8px;
 }
 
+.layout section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.layout section ul li {
+  width: calc(50% - 1rem);
+}
+.layout section ul li * {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.layout section ul li img {
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+}
+.layout section ul li a {
+  display: block;
+}
+.layout section ul li a:hover h4,
+.layout section ul li a:hover .date {
+  color: rgb(var(--accent));
+}
+.layout section ul a:hover img {
+  box-shadow: var(--box-shadow);
+}
+@media (max-width: 800px) {
+  .layout section ul {
+    gap: 0.5em;
+  }
+  .layout section ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+.layout main {
+  width: calc(100% - 2em);
+  max-width: 100%;
+  margin: 0;
+}
+.layout header nav h2 a div {
+  margin-right: 5px;
+}
+
+@media (min-width: 801px) {
+  .layout main {
+    min-width: 750px;
+    max-width: 850px;
+    margin: auto;
+  }
+}
 .hero-container {
   width: 100%;
   text-align: center;
@@ -405,27 +496,66 @@ footer .social-links a:hover {
   padding: 1em;
   color: rgb(var(--gray-dark));
 }
-
 .prose .label {
   font-weight: bold;
+}
+.prose ul a {
+  color: #69BE28;
+}
+.prose ul a:hover {
+  color: #2337ff;
+}
+.prose .copy-to-clipboard-wrap {
+  position: relative;
+  margin-top: 32px;
+}
+.prose .copy-to-clipboard-wrap .copy-to-clipboard-icon {
+  position: absolute;
+  color: #002244;
+  right: -10px;
+  top: -12px;
+  border-radius: 50%;
+  background-color: #A5ACAF;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+.prose .copy-to-clipboard-wrap .copy-to-clipboard-icon:hover {
+  background-color: #69BE28;
+}
+.prose .copy-to-clipboard-wrap .copy-to-clipboard-icon:hover svg {
+  color: white;
+}
+.prose .copy-to-clipboard-wrap.copied-to-clipboard pre {
+  background-color: #333 !important;
+}
+.prose .copy-to-clipboard-wrap.copied-to-clipboard pre * {
+  color: #fff !important;
 }
 
 @media (min-width: 720px) {
   body {
     font-size: 20px;
   }
+
   main {
     padding: 3em 1em;
   }
+
   h2 {
     font-size: 2.441em;
   }
+
   h4 {
     font-size: 1.953em;
   }
+
   .head-shot {
     width: 220px;
   }
+
   .layout header nav h2 a div {
     display: inline;
   }
