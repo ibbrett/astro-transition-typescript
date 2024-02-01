@@ -2,19 +2,23 @@
 	width: 100%;
 	text-align: center;
 }
+
 .hero {
 	padding: $hero-padding;
 	border-radius: $hero-border-radius;
 	border: $hero-border;
-  display: inline-block;
+	display: inline-block;
 }
+
 .hero-header {
 	font-size: $hero-header-font-size;
 	line-height: $hero-header-font-size;
 }
+
 .hero-title {
 	font-size: $hero-title-font-size;
 }
+
 .hero-date {
 	font-size: $hero-date-font-size;
 }
@@ -33,17 +37,17 @@
 	color: $code-hero-color;
 }
 
-.blog .hero {
-	background-color: $blog-hero-bg;
-	color: $blog-hero-color;
+.features .hero {
+	background-color: $features-hero-bg;
+	color: $features-hero-color;
 }
 
-.blog .hero a {
-	color: $blog-hero-color;
+.features .hero a {
+	color: $features-hero-color;
 }
 
 .about .hero a:hover,
-.blog .hero a:hover,
+.features .hero a:hover,
 .code .hero a:hover {
 	color: $anchor-hover-color;
 }

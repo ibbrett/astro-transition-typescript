@@ -20,13 +20,13 @@ $hero-date-font-size: 18px;
 $palette-base: rgba(254, 254, 254, .1);
 $palette-bg: $action-green;
 $palette-bold1: $college-navy; // about
-$palette-bold2: $college-navy; // blog
+$palette-bold2: $college-navy; // features
 $palette-bold3: $college-navy; // code
 
 $about-hero-bg: $palette-bg;
 $about-hero-color: $palette-bold1;
-$blog-hero-bg: $palette-bg;
-$blog-hero-color: $palette-bold2;
+$features-hero-bg: $palette-bg;
+$features-hero-color: $palette-bold2;
 $code-hero-bg: $palette-bg;
 $code-hero-color: $palette-bold3;
 
@@ -35,7 +35,7 @@ $snippet-method: $palette-bg;
 
 $about-bg: $palette-base;
 $code-bg: $palette-base;
-$blog-bg: $palette-base;
+$features-bg: $palette-base;
 
 $anchor-color: $college-navy;
 $method-anchor-color: $action-green;

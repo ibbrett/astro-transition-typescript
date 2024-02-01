@@ -5,7 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_HEADER_TITLE } from '../consts';
 const baseUrl = await import.meta.env.BASE_URL;
 
 export async function GET(context) {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('features');
 	return rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
@@ -13,7 +13,7 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `${baseUrl}/blog/${post.slug}/`,
+			link: `${baseUrl}/features/${post.slug}/`,
 		})),
 	});
 }

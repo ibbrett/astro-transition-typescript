@@ -28,7 +28,7 @@
     background-color: #69BE28;
   }
 }
-@keyframes change-color-blog {
+@keyframes change-color-features {
   0% {
     color: #002244;
     background-color: #69BE28;
@@ -333,11 +333,11 @@ footer .social-links a:hover {
   background-color: rgba(254, 254, 254, 0.1);
 }
 
-.blog main {
+.features main {
   background-color: rgba(254, 254, 254, 0.1);
 }
 
-.blog .astro-code,
+.features .astro-code,
 .code .astro-code,
 .snippet .astro-code {
   font-size: 14px;
@@ -474,17 +474,17 @@ footer .social-links a:hover {
   color: #002244;
 }
 
-.blog .hero {
+.features .hero {
   background-color: #69BE28;
   color: #002244;
 }
 
-.blog .hero a {
+.features .hero a {
   color: #002244;
 }
 
 .about .hero a:hover,
-.blog .hero a:hover,
+.features .hero a:hover,
 .code .hero a:hover {
   color: #2337ff;
 }

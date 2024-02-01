@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_HEADER_TITLE } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-const page = 'blog';
+const page = 'features';
 const baseUrl = await import.meta.env.BASE_URL;
 const posts = (await getCollection(page)).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -27,7 +27,7 @@ const posts = (await getCollection(page)).sort(
 					{
 						posts.map((post) => (
 							<li>
-									<a href={`${baseUrl}/blog/${post.slug}/`}>
+									<a href={`${baseUrl}/features/${post.slug}/`}>
 									<div class="hero-container"><div class="hero">
 										<div class="hero-header">{post.data.title.split(' ')[0]}</div>
 										<div class="hero-title">{post.data.title.split(' ')[1]}&nbsp;{post.data.title.split(' ')[2]}</div>

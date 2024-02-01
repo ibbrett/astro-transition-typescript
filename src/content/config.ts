@@ -38,4 +38,4 @@ const arraySnippet = defineCollection({
   }),
 });
 
-export const collections = { blog: features, about, code, Array: arraySnippet };
+export const collections = { features, about, code, Array: arraySnippet };

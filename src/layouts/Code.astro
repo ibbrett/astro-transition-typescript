@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import Hero from '../components/Hero.astro';
 import ProseTitleLabel from '../components/ProseTitleLabel.astro';
 const page = 'code';
-const redirectPage = 'blog';
+const redirectPage = 'features';
 const label = 'Code Snippets';
 const posts = (await getCollection(page)).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
